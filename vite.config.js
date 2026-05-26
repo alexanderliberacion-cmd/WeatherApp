@@ -8,7 +8,7 @@ export default defineConfig({
       react(),
         tailwindcss()
   ],
-    base: 'https://alexanderliberacion-cmd.github.io/WeatherApp/',
+    base: 'WeatherApp/',
 })
 
 
