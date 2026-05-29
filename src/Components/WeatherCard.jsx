@@ -45,7 +45,7 @@ export const WeatherCard = ({city, temperature, condition, forecast}) =>{
             <div id="condition" className="flex">
                 <p className="text-gray-50 font-semibold text-lg">{condition}</p>
             </div>
-            <div className="flex gap-2 justify-between items-center">
+            <div className="flex gap-2 justify-between">
             {forecast && forecastFilter.map((item, index) => {
                 const date = new Date(item.dt_txt).toLocaleDateString('es-ES', {weekday: 'short'},);
                 return(
