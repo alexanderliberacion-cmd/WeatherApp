@@ -11,7 +11,7 @@ export const SearchBar = ({onCityChange}) => {
     }
 
     return (
-        <div id="searchBar" className="border-2 border-slate-700 rounded-sm w-2xl sm:w-xl flex bg-blue-950 items-center">
+        <div id="searchBar" className="border-2 border-slate-700 rounded-sm w-full md:w-2xl  flex bg-blue-950 items-center">
             <form onSubmit={onSubmit} className="flex w-full items-center">
             <label>
                 <input type="text" placeholder="Enter a city..." id="searchInput" required className="text-white font-bold text-xl placeholder-white" onChange={(e) => setCity(e.target.value)} />

@@ -33,7 +33,7 @@ export const WeatherCard = ({city, temperature, condition, forecast}) =>{
 
 
     return (
-        <div id="weatherCard" className="bg-slate-800 text-white rounded-xl w-2xl flex flex-col gap-8 justify-start p-4">
+        <div id="weatherCard" className="bg-slate-800 text-white rounded-xl w-full md:w-2xl flex flex-col gap-8 justify-start p-4">
             <div id="cityTemperatureAndIcon" className="flex">
                 <div id="cityTemperature" className="flex flex-col gap-1">
                     <h2 className="text-gray-100 font-semibold text-4xl">{city}</h2>
