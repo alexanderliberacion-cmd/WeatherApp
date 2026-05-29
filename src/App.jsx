@@ -46,7 +46,7 @@ export const App = () => {
 
     //La weathercard recibe la informacion solamente si weatherData tiene datos
     return (
-        <main className="bg-slate-900 flex flex-col justify-center min-w-screen min-h-screen ">
+        <main className="bg-slate-900  flex flex-col justify-center min-w-screen min-h-screen items-center">
             <div id="width" className="max-w-7xl mx-auto w-full px-4">
                 <h1 className="text-3xl font-bold text-white mb-4">Weather App</h1>
                 <section>
