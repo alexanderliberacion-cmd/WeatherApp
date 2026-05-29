@@ -45,11 +45,11 @@ export const WeatherCard = ({city, temperature, condition, forecast}) =>{
             <div id="condition" className="flex">
                 <p className="text-gray-50 font-semibold text-lg">{condition}</p>
             </div>
-            <div className="flex gap-4 justify-between ">
+            <div className="flex-1 gap-2 justify-between ">
             {forecast && forecastFilter.map((item, index) => {
                 const date = new Date(item.dt_txt).toLocaleDateString('es-ES', {weekday: 'short'},);
                 return(
-                <div key={index} className="bg-slate-700 rounded-lg p-2 flex-1">
+                <div key={index} className="bg-slate-700 rounded-lg p-2 ">
                     <p>{date}</p>
                     <p>{`${Math.round(item.main.temp)}ºC`}</p>
                     <p className="text-3xl">{weatherIcons(item.weather[0].main)}</p>
